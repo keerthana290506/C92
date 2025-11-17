@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 🌈 Add theme color */
+  background-color: #f9fbff; /* light blue background */
+  color: #1E1E2F; /* dark text */
+}
+
+/* ✅ Blue theme variables */
+:root {
+  --primary-color: #1E66FF; /* main blue */
+  --secondary-color: #0033aa; /* darker shade for hover */
+  --text-light: #ffffff;
+}
+
+/* ✅ Apply theme globally */
+a,
+.link,
+.text-primary {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover,
+.link:hover {
+  color: var(--secondary-color);
+}
+
+button,
+.btn,
+.primary,
+.navbar,
+.header,
+.topbar {
+  background-color: var(--primary-color) !important;
+  color: var(--text-light) !important;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(30, 102, 255, 0.2);
+  outline: none;
+}
+
+/* Optional: consistent scrollbar color */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
